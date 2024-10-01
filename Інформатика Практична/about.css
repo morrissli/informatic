@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #67abca;
+}
+.main-after-container {
+    height: 100em;
+}
+.nav a:hover {
+    background-color: #0595A2;
+}
+
+body {
+    background:
+            url("../IMG/png\ prof-cart3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 99.5vh;
+    line-height: 1.5;
+}
+#icn, .nav {
+    margin-left: 267.63px;
+}
+
+.intro {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.intro h1 {
+    font-size: 22px;
+    color: #fff;
+}
+#par1 {
+    font-size: 20px;
+    color: #fff;
+    display: none;
+}
+#btn2 {
+    display: none;
+    background-color: rgb(55, 253, 230);
+    color: rgb(92, 122, 219);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(73, 116, 196);
+}
+#btn {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(55, 253, 230);
+    color: rgb(92, 122, 219);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgb(73, 116, 196);
+}
+
+#par2 {
+    font-size: 18px;
+    color: #fff;
+}
+.dib1, .dib2 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.dib2 {
+    margin-top: 30px;
+}
+.card {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #67abca;
+}
+.card img {
+    max-width: 300px;
+    border-radius: 50px 50px 0px 0px;
+}
+.card8 {
+    max-width: 350px;
+}
+.card8 img {
+    max-width: 350px;
+    border-radius: 50px 50px 0 0;
+}
+
+#par1 {
+    animation: parAnim 2s ease-out 0s 1;
+    transition: 0.5 ease;
+}
+@keyframes parAnim {
+    from {
+        font-size: 0;
+        opacity: 0%;
+    }
+
+    to {
+        font-size: 20px;
+        opacity: 100%;
+    }
+}
+
+.intro {
+    animation: introAnim 2s ease-out 0s 1;
+}
+
+@keyframes introAnim {
+    from {
+        transform: translateY(-170%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.dib1 {
+    animation: cardOne 2s ease-out 0s 1;
+}
+
+@keyframes cardOne {
+    from {
+        transform: translate(-110%)
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.dib2 {
+    animation: cardTwo 2s ease-out 0s 1;
+}
+
+@keyframes cardTwo {
+    from {
+        transform: translateX(110%);
+    }
+
+    to {
+        transform: translate(0%);
+    }
+}

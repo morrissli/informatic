@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(82, 140, 206);
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main-after-container {
+    height: 56.7em;
+}
+#icn, .nav {
+    margin-left: 267.63px;
+}
+
+.main-info{
+    display: flex;
+    justify-content: space-around;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.text-title{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 5px;
+    line-height: 50px;
+}
+.main-text{
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.buttons-container{
+    margin-top: 30px;
+}
+.buttons-container p {
+    margin-top: 20px;
+    display: none;
+    color: #fff;
+    position: fixed;
+}
+.main-btn{
+    padding: 10px 20px 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.main-btn.explore{
+    background: #fff;
+    color: rgb(82, 140, 206);
+}
+.main-btn.explore:hover{
+    background: transparent;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.main-btn.learn:hover{
+    background: #fff;
+    color: rgb(82, 140, 206);
+    transition: 0.5s ease;
+}
+.main-btn.shov2{
+    background: #fff;
+    color: rgb(82, 140, 206);
+}
+.main-btn.shov2:hover{
+    background: transparent;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.main-btn.shov1:hover{
+    background: #fff;
+    color: rgb(82, 140, 206);
+    transition: 0.5s ease;
+}
+
+
+body {
+    transition: color 0.5 ease;
+}
+
+.wathimg {
+    animation: watchAnim 2s ease-out 0s 1;
+}
+@keyframes watchAnim {
+    from {
+        transform: translate(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.txt {
+    animation: mainInfAnim 2s ease-out 0s 1;
+}
+@keyframes mainInfAnim {
+    from {
+        transform: translate(-130%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.div-info {
+    display: flex;
+    vertical-align: baseline;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    margin-top: 80px;
+    animation: divAnim 2s ease-out 0s 1;
+}
+#cor {
+    font-size: 18px;
+}
+
+@keyframes divAnim {
+    from {
+        transform: translateY(110%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.buttons-container {
+    transition: 0.5 ease;
+}
+
+.shov1, .shov2 {
+    display: none;
+}

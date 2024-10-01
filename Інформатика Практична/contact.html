@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a85ce590f8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<div class="main-after-container">
+    <div class="header">
+        <h1 id="h1">WATCH</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"><i class="fa-regular fa-clone" style="margin-right: 5px;"></i>HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="nav">
+            <form id="search">
+                <input type="submit" value="Пошук">
+                <input type="search" name="search" id="searchName">
+            </form>
+            <i class="fa-solid fa-magnifying-glass" id="icn"></i>
+            <i class="fa-solid fa-xmark" id="icn2"></i>
+            <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+    <div id="header">
+        <h2>Список моїх справ:</h2>
+        <input type="text" id="header-input" placeholder="Нова справа...">
+        <span onclick="newElement()" class="btn-add">Додати подію</span>
+    </div>
+    <ul id="my-list-affairs">
+        <li class="checked">Почати робити дипломну роботу</li>
+        <li>Зробити основу роботи</li>
+        <li>Додати інші сторінки до проекту</li>
+        <li>Не отримати нервовий зрив</li>
+        <li>Доробити роботу до кінця</li>
+        <li>Захистити дипломну роботу</li>
+    </ul>
+</div>
+
+<script src="../JS/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main-after-container {
+    height: 56.7em;
+}
+#icn, .nav {
+    margin-left: 219.61px;
+}
+.nav a:hover {
+    background-color: rgb(2, 105, 105);
+}
+
+body {
+    background-color: darkcyan;
+}
+#header {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: rgb(2, 105, 105);
+    margin-bottom: 10px;
+    border-bottom: 3px solid #000;
+    border-top: 3px solid #000;
+    animation: headerAnim 2s ease-out 0s 1;
+}
+
+@keyframes headerAnim {
+    from {
+        transform: translateY(-250%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.container {
+    margin: 10px auto;
+    width: 100%;
+    padding: 20px 10px;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#form {
+    margin-left: 30px;
+    padding: 20px;
+    background-color: rgb(54, 168, 168);
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 500px;
+    margin-bottom: 10px;
+    animation: formAnim 2s ease-out 0s 1;
+}
+
+@keyframes formAnim {
+    from {
+        transform: translate(-130%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#form label {
+    display: block;
+}
+.text-input {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 12px;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+#gender {
+    width: 100%;
+    height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#sbt {
+    width: 100%;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(2, 105, 105);
+    color: rgb(114, 142, 226);
+    border-radius: 10px;
+    box-shadow: 7px 7px 20px rgb(88, 86, 86);
+}
+.user {
+    margin-right: 30px;
+    width: 500px;
+}
+#users li {
+    animation: userAnim 2s ease-out 0s 1;
+}
+
+@keyframes userAnim {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.error {
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.msg-good {
+    background-color: lawngreen;
+    color: #000;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}

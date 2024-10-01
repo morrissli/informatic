@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-after-container {
+    height: 56.7em;
+}
+.nav a:hover {
+    background-color: rgb(40, 67, 117);
+}
+
+body {
+    background-image: url(../IMG/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 99.5vh;
+    line-height: 1.5;
+}
+#icn, .nav {
+    margin-left: 219.61px;
+}
+
+#header {
+    background-color: rgba(71, 84, 141, .9);
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+    animation: headerAnim 2s ease-out 0s 1;
+}
+
+@keyframes headerAnim {
+    from {
+        transform: translateY(-250%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+#header-input {
+    border: none;
+    width: 60%;
+    margin: 0;
+    padding: 10px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+}
+.btn-add {
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    transition: .6s;
+    font-size: 15px;
+    background-color: rgba(139, 137, 137, .6);
+}
+.btn-add:hover {
+    background-color: #bbb;
+}
+#my-list-affairs li {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 10px 15px 50px;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#my-list-affairs li:nth-child(odd) {
+    background-color: rgba(0, 0, 0, .3);
+    animation: liOddAnim 2s ease-out 0s 1;
+}
+
+@keyframes liOddAnim {
+    from {
+        transform: translate(-230%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#my-list-affairs li:nth-child(even) {
+    background-color: rgba(114, 112, 112, 0.3);
+    animation: liEvenAnim 2s ease-out 0s 1;
+}
+
+@keyframes liEvenAnim {
+    from {
+        transform: translate(230%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#my-list-affairs li.checked {
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#my-list-affairs li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 12px;
+    left: 15px;
+    transform: rotate(50deg);
+    width: 5px;
+    height: 15px;
+}
+
+.close {
+    top: 0;
+    right: 0;
+    padding: 15px 20px 15px 20px;
+    position: absolute;
+}
+
+.close:hover {
+    background-color: rgb(204, 28, 28);
+    color: #fff;
+}
+
+#icn2 {
+    display: none;
+}

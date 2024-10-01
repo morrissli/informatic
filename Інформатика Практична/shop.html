@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <script src="https://kit.fontawesome.com/a85ce590f8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="shop.css">
+    <script src="shop.js"></script>
+</head>
+<body>
+
+<div class="main-after-container">
+    <div class="header">
+        <h1 id="h1">WATCH</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"><i class="fa-regular fa-clone" style="margin-right: 5px;"></i>HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="nav">
+            <form id="search">
+                <input type="submit" value="Пошук">
+                <input type="search" name="search" id="searchName">
+            </form>
+            <i class="fa-solid fa-magnifying-glass" id="icn"></i>
+            <i class="fa-solid fa-xmark" id="icn2"></i>
+            <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+    <div id="header">Зворотній зв'язок</div>
+    <div class="container">
+        <form id="form">
+            <h2>Заповніть форму</h2>
+            <div class="msg"></div>
+            <label for="name">Ім'я:</label>
+            <input name="name" id="name" type="text" class="text-input">
+            <label for="surname">Фамілія:</label>
+            <input name="surname" id="surname" type="text" class="text-input">
+            <label for="email">Електронна Пошта:</label>
+            <input name="email" id="email" type="text" class="text-input">
+            <label for="phone">Номер Телефону:</label>
+            <input name="phone" id="phone" type="text" class="text-input">
+            <label for="gender">Стать:</label>
+            <select name="gender" id="gender">
+                <option value="seleclgender">Оберіть Стать</option>
+                <option value="male">Male</option>
+                <option value="famale">FaMale</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit" id="sbt">
+        </form>
+        <div class="user">
+            <ul id="users"></ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
